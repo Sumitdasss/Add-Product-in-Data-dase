@@ -9,7 +9,7 @@ const handleSubmit = async (e) => {
     const data = Object.fromEntries(formData);
 
     try {
-      const response = await axios.post('http://localhost:3000/creat', data);
+      const response = await axios.post('https://your-backend.vercel.app/creat', data);
       alert("Product Added!");
       console.log(response.data);
     } catch (err) {
